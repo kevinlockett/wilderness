@@ -479,6 +479,30 @@ const longestRiver = (rivers) => {
     return longest
 }
 
+// Get least expensive trails
+const findBargainTrails = (trails) => {
+    let bargainTrails = []
+    for (const trail of trails) {
+        if (trail.price === "$") {
+            bargainTrails.push(trail.trailName)
+        }        
+    }
+    bargainTrails = bargainTrails.join(`\n\t`)
+    return bargainTrails
+}
+
+// Get most expensive trails
+const findPremiumTrails = (trails) => {
+    let premiumTrails = []
+    for (const trail of trails) {
+        if (trail.price >= "$$$$") {
+            premiumTrails.push(trail.trailName)
+        }        
+    }
+    premiumTrails = premiumTrails.join(`\n\t`)
+    return premiumTrails
+}
+
 
 console.log(`
     B J Ö R N ' S   W I L D N E R N E S S   A D V E N T U R E S
@@ -508,6 +532,12 @@ console.log(`The shortest trail is ${shortTrail} kilometers`)
 
 const longTrail = longestTrail(trails)
 console.log(`The longest trail is ${longTrail} kilometers \n`)
+
+const cheapTrails = findBargainTrails(trails)
+console.log(`The least expensive trails are: \n\t${cheapTrails} \n`)
+
+const expensiveTrails = findPremiumTrails(trails)
+console.log(`The most expensive trails are: \n\t${expensiveTrails} \n`)
 
 console.log('***************************************************')
 console.log('*****              R I V E R S                *****')
