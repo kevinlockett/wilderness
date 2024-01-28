@@ -413,19 +413,19 @@ const wildlife = [{
     lengthInKilometers: 22
 }]
 
-// Get the sum of all trail miles
-const totalTrailMiles = (trails) => {
+// Get the sum of all trail kilometers
+const totalTrailKilometers = (trails) => {
     let total = 0
     for (const trail of trails) {
         total += trail.lengthInKilometers
     }
 
-    return(Math.round(total))
+    return(Math.round(10 * total) / 10)
 }
 
 // Get the shortest of all trails
 const shortestTrail = (trailArray) => {
-    let shortest = 50
+    let shortest = Number.POSITIVE_INFINITY
     for (const trail of trailArray)
         if (trail.lengthInKilometers < shortest) {
             shortest = trail.lengthInKilometers
@@ -433,7 +433,6 @@ const shortestTrail = (trailArray) => {
     
     return shortest
 }
-
 
 // Get the longest of all trails
 const longestTrail = (allTrails) => {
@@ -447,6 +446,39 @@ const longestTrail = (allTrails) => {
     return longest
 }
 
+// Get the sum of all river kilometers
+const totalRiverKilometers = (rivers) => {
+    let total = 0
+    for (const river of rivers) {
+        total += river.lengthInKilometers
+    }
+
+    return(Math.round(10 * total) / 10)
+}
+
+// Get the shortest of all rivers
+const shortestRiver = (rivers) => {
+    let shortest = Number.POSITIVE_INFINITY
+    for (const river of rivers)
+        if (river.lengthInKilometers < shortest) {
+            shortest = river.lengthInKilometers
+        }
+    
+    return shortest
+}
+
+// Get the longest of all rivers
+const longestRiver = (rivers) => {
+    let longest = 0
+    for (const river of rivers) {
+        if (river.lengthInKilometers > longest) {
+            longest = river.lengthInKilometers
+        }
+    }
+
+    return longest
+}
+
 
 console.log(`
     B J Ö R N ' S   W I L D N E R N E S S   A D V E N T U R E S
@@ -454,26 +486,37 @@ console.log(`
 
                                                         ###
         ______                                         #o###
-       /     /\     (              ______            #####o###
-      /     /  \     )            /     /\          #o#\#|#/###
-     /_____/----\_    (          /     /  \          ###\|/#o#
-    '     '          ).         /_____/----\_         # }|{  #
+       /     /\\     (              ______            #####o###
+      /     /  \\     )            /     /\\          #o#\\#|#/###
+     /_____/----\\_    (          /     /  \\          ###\\|/#o#
+    '     '          ).         /_____/----\\_         # }|{  #
    _ ___          O (:') o      '  '     '   '          }|{
-  (@))_))        O ~/~~\~ o                             }|{
-                  o     O                          ____/   \____
+  (@))_))        O ~/~~\\~ o                             }|{
+                  o     O                          ____/   \\____
                      O
 `)
 
 
 console.log('***************************************************')
 console.log('*****              T R A I L S                *****')
-console.log('***************************************************')
-const trailTotal = totalTrailMiles(trails)
-console.log(`We service nearly ${trailTotal} kilometers of wilderness trails across the US`)
+console.log('***************************************************\n')
+const trailTotal = totalTrailKilometers(trails)
+console.log(`We service ${trailTotal} kilometers of wilderness trails across the US`)
 
 const shortTrail = shortestTrail(trails)
 console.log(`The shortest trail is ${shortTrail} kilometers`)
 
 const longTrail = longestTrail(trails)
-console.log(`The longest trail is ${longTrail} kilometers`)
+console.log(`The longest trail is ${longTrail} kilometers \n`)
 
+console.log('***************************************************')
+console.log('*****              R I V E R S                *****')
+console.log('***************************************************\n')
+const riverTotal = totalRiverKilometers(rivers)
+console.log(`We offer expert guidance on ${riverTotal} kilometers of scenic rivers across the US`)
+
+const shortRiver = shortestRiver(rivers)
+console.log(`The shortest river tour is ${shortRiver} kilometers`)
+
+const longRiver = longestRiver(rivers)
+console.log(`The longest river tour is ${longRiver} kilometers`)
