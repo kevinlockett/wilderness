@@ -98,14 +98,14 @@ const trails = [{
     id: 13,
     price: "$",
     latitude: 48.8282801,
-    longi1ude: 2.7011678,
+    longitude: 2.7011678,
     plantHighlight: "Texas Geranium",
     trailName: "Turkey Ambush Trail",
     lengthInKilometers: 31.28
 }, {
     id: 14,
     price: "$",
-    latitede: 59.0883359,
+    latitude: 59.0883359,
     longitude: 17.5704656,
     plantHighlight: "Point Reyes Ceanothus",
     trailName: "Sunshine Straights",
@@ -187,7 +187,7 @@ const trails = [{
     price: "$$$$",
     latitude: 49.988725,
     longitude: 20.7001411,
-    plantHighlights: "Jepson's Linanthus",
+    plantHighlight: "Jepson's Linanthus",
     trailName: "Brudersons Parkway",
     lengthInKilometers: 39.46
 }, {
@@ -503,7 +503,7 @@ const findPremiumTrails = (trails) => {
     return premiumTrails
 }
 
-// Get least expensive river tourss
+// Get least expensive river tours
 const findBargainRivers = (rivers) => {
     let bargainRivers = []
     for (const river of rivers) {
@@ -515,7 +515,7 @@ const findBargainRivers = (rivers) => {
     return bargainRivers
 }
 
-// Get most expensive river tourss
+// Get most expensive river tours
 const findPremiumRivers = (rivers) => {
     let premiumRivers = []
     for (const river of rivers) {
@@ -525,6 +525,26 @@ const findPremiumRivers = (rivers) => {
     }
     premiumRivers = premiumRivers.join(`\n\t`)
     return premiumRivers
+}
+
+//get trail details
+
+const getTrailDetails = trails => {
+    let details = []
+    for (trail of trails) {
+        details.push(`${trail.trailName} starts at [${trail.latitude}, ${trail.longitude}] and is ${trail.lengthInKilometers} kilometers long. \nThe highlighted plant for the trip is ${trail.plantHighlight}. \n`)
+    }
+    details = details.join(`\n`)
+    return details
+}
+
+const getRiverDetails = rivers => {
+    let details = []
+    for (river of rivers) {
+        details.push(`${river.river} starts at [${river.latitude}, ${river.longitude}] and is ${river.lengthInKilometers} kilometers long. \nThe unique fish for the trip is ${river.uniqueFish}. \n`)
+    }
+    details = details.join(`\n`)
+    return details
 }
 
 
@@ -563,6 +583,12 @@ console.log(`The least expensive trails are: \n\t${cheapTrails} \n`)
 const expensiveTrails = findPremiumTrails(trails)
 console.log(`The most expensive trails are: \n\t${expensiveTrails} \n`)
 
+console.log(`TRAIL DETAILS:`)
+console.log(`--------------------------------- \n`)
+
+const trailDetails = getTrailDetails(trails)
+console.log(trailDetails)
+
 console.log('***************************************************')
 console.log('*****              R I V E R S                *****')
 console.log('***************************************************\n')
@@ -580,3 +606,9 @@ console.log(`The least expensive river tours are: \n\t${cheapRivers} \n`)
 
 const expensiveRivers = findPremiumRivers(rivers)
 console.log(`The most expensive river tours are: \n\t${expensiveRivers} \n`)
+
+console.log(`RIVER DETAILS:`)
+console.log(`--------------------------------- \n`)
+
+const riverDetails = getRiverDetails(rivers)
+console.log(riverDetails)
