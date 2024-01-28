@@ -5,7 +5,7 @@ const trails = [{
     longitude: 105.19602,
     plantHighlight: "Rock Melicgrass",
     trailName: "Faraway Glades Trail",
-    length: 10.46
+    lengthInKilometers: 10.46
 }, {
     id: 2,
     price: "$$$",
@@ -13,7 +13,7 @@ const trails = [{
     longitude: -76.5452105,
     plantHighlight: "Kane County Twinpod",
     trailName: "Moose End Trail",
-    length: 6.88
+    lengthInKilometers: 6.88
 }, {
     id: 3,
     price: "$$",
@@ -21,7 +21,7 @@ const trails = [{
     longitude: -75.9373449,
     plantHighlight: "Pinewoods Horkelia",
     trailName: "Fallen Soldier's Route",
-    length: 49.2
+    lengthInKilometers: 49.2
 }, {
     id: 4,
     price: "$$$$",
@@ -29,7 +29,7 @@ const trails = [{
     longitude: -65.2939441,
     plantHighlight: "Rosette Lichen",
     trailName: "Endless Tunnels Path",
-    length: 20.51
+    lengthInKilometers: 20.51
 }, {
     id: 5,
     price: "$$$",
@@ -37,7 +37,7 @@ const trails = [{
     longitude: 118.400294,
     plantHighlight: "Spiny Hopsage",
     trailName: "Trotter's Trail",
-    length: 6.6
+    lengthInKilometers: 6.6
 }, {
     id: 6,
     price: "$$$$$",
@@ -45,7 +45,7 @@ const trails = [{
     longitude: -8.6457376,
     plantHighlight: "Cantua",
     trailName: "Stepping Stone Route",
-    length: 37.68
+    lengthInKilometers: 37.68
 }, {
     id: 7,
     price: "$",
@@ -53,7 +53,7 @@ const trails = [{
     longitude: 119.724733,
     plantHighlight: "Largeflower Skeletonplant",
     trailName: "Rocky Bottom Way",
-    length: 36.64
+    lengthInKilometers: 36.64
 }, {
     id: 8,
     price: "$$",
@@ -61,7 +61,7 @@ const trails = [{
     longitude: 141.2777515,
     plantHighlight: "Rosette Lichen",
     trailName: "The Giant's Leg",
-    length: 30.37
+    lengthInKilometers: 30.37
 }, {
     id: 9,
     price: "$$",
@@ -69,7 +69,7 @@ const trails = [{
     longitude: 21.83333,
     plantHighlight: "Glory Of Texas",
     trailName: "Bear Cub Walk",
-    length: 11.26
+    lengthInKilometers: 11.26
 }, {
     id: 10,
     price: "$$$$",
@@ -77,7 +77,7 @@ const trails = [{
     longitude: 121.435112,
     plantHighlight: "Spreading Wallflower",
     trailName: "Canyon Pass",
-    length: 37.49
+    lengthInKilometers: 37.49
 }, {
     id: 11,
     price: "$$$",
@@ -85,7 +85,7 @@ const trails = [{
     longitude: 35.018481,
     plantHighlight: "Western Sandcherry",
     trailName: "Wolf Howl Trail",
-    length: 46.4
+    lengthInKilometers: 46.4
 }, {
     id: 12,
     price: "$$",
@@ -93,7 +93,7 @@ const trails = [{
     longitude: 108.957345,
     plantHighlight: "Tecate Tarweed",
     trailName: "Topsy Turvy",
-    length: 43.84
+    lengthInKilometers: 43.84
 }, {
     id: 13,
     price: "$",
@@ -101,7 +101,7 @@ const trails = [{
     longi1ude: 2.7011678,
     plantHighlight: "Texas Geranium",
     trailName: "Turkey Ambush Trail",
-    length: 31.28
+    lengthInKilometers: 31.28
 }, {
     id: 14,
     price: "$",
@@ -109,7 +109,7 @@ const trails = [{
     longitude: 17.5704656,
     plantHighlight: "Point Reyes Ceanothus",
     trailName: "Sunshine Straights",
-    length: 23.57
+    lengthInKilometers: 23.57
 }, {
     id: 15,
     price: "$$",
@@ -117,7 +117,7 @@ const trails = [{
     longitude: 44.32414,
     plantHighlight: "Awl-leaf Wattle",
     trailName: "Treetops Trail",
-    length: 13.47
+    lengthInKilometers: 13.47
 }, {
     id: 16,
     price: "$$$$$",
@@ -125,7 +125,7 @@ const trails = [{
     longitude: 122.8950755,
     plantHighlight: "Honeysuckle",
     trailName: "The Honeysuckle Corridor",
-    length: 28.39
+    lengthInKilometers: 28.39
 }, {
     id: 17,
     price: "$$$",
@@ -133,7 +133,7 @@ const trails = [{
     longitude: -39.6105142,
     plantHighlight: "Coolwort",
     trailName: "Bumbling Badger Way",
-    length: 15.54
+    lengthInKilometers: 15.54
 }, {
     id: 18,
     price: "$",
@@ -141,7 +141,7 @@ const trails = [{
     longitude: -44.9561012,
     plantHighlight: "Common Leopardbane",
     trailName: "Snowshoe Pass",
-    length: 24.62
+    lengthInKilometers: 24.62
 }, {
     id: 19,
     price: "$$",
@@ -149,7 +149,7 @@ const trails = [{
     longitude: 13.9920633,
     plantHighlight: "Climbing Fern",
     trailName: "Endless Fir Trail",
-    length: 41.07
+    lengthInKilometers: 41.07
 }, {
     id: 20,
     price: "$$$$",
@@ -157,7 +157,7 @@ const trails = [{
     longitude: 111.033425,
     plantHighlight: "Distinct Map Lichen",
     trailName: "Danterre Route",
-    length: 32.2
+    lengthInKilometers: 32.2
 }, {
     id: 21,
     price: "$$",
@@ -165,7 +165,7 @@ const trails = [{
     longitude: 25.9053209,
     plantHighlight: "Hooker's Milkwort",
     trailName: "Walnut Walkway",
-    length: 22.0
+    lengthInKilometers: 22.0
 }, {
     id: 22,
     price: "$$$",
@@ -173,7 +173,7 @@ const trails = [{
     longitude: 125.16258,
     plantHighlight: "Mariposa Lily",
     trailName: "White Forest Trail",
-    length: 44.14
+    lengthInKilometers: 44.14
 }, {
     id: 23,
     price: "$$$$",
@@ -181,7 +181,7 @@ const trails = [{
     longitude: 17.9557436,
     plantHighlight: "Russethair Saxifrage",
     trailName: "Piney Way",
-    length: 18.36
+    lengthInKilometers: 18.36
 }, {
     id: 24,
     price: "$$$$",
@@ -189,7 +189,7 @@ const trails = [{
     longitude: 20.7001411,
     plantHighlights: "Jepson's Linanthus",
     trailName: "Brudersons Parkway",
-    length: 39.46
+    lengthInKilometers: 39.46
 }, {
     id: 25,
     price: "$$$",
@@ -197,7 +197,7 @@ const trails = [{
     longitude: 50.5446161,
     plantHighlight: "Tushar Range Beardtongue",
     trailName: "Pinecone Pass",
-    length: 45.54
+    lengthInKilometers: 45.54
 }]
 
 
@@ -208,7 +208,7 @@ const rivers = [{
     longitude: 12.2028691,
     uniqueFish: "Hystrix indica",
     river: "Eleven Point National Scenic River",
-    length: 22
+    lengthInKilometers: 22
 }, {
     id: 2,
     price: "$$$$$",
@@ -216,7 +216,7 @@ const rivers = [{
     longitude: -51.8148609,
     uniqueFish: "Libellula quadrimaculata",
     river: "Willamette River Water Trail",
-    length: 73
+    lengthInKilometers: 73
 }, {
     id: 3,
     price: "$$$$",
@@ -224,7 +224,7 @@ const rivers = [{
     longitude: 49.6634858,
     uniqueFish: "Ceratotherium simum",
     river: "Missouri National Recreational River Water Trail",
-    length: 19
+    lengthInKilometers: 19
 }, {
     id: 4,
     price: "$$",
@@ -232,7 +232,7 @@ const rivers = [{
     longitude: -8.5624704,
     uniqueFish: "Philetairus socius",
     river: "Kenai River",
-    length: 15
+    lengthInKilometers: 15
 }, {
     id: 5,
     price: "$$$",
@@ -240,7 +240,7 @@ const rivers = [{
     longitude: 60.4807823,
     uniqueFish: "Gopherus agassizii",
     river: "Huron River Water Trail",
-    length: 32
+    lengthInKilometers: 32
 }, {
     id: 6,
     price: "$$$",
@@ -248,7 +248,7 @@ const rivers = [{
     longitude: 122.4801854,
     uniqueFish: "Macropus fuliginosus",
     river: "Buffalo National River",
-    length: 67
+    lengthInKilometers: 67
 }, {
     id: 7,
     price: "$",
@@ -256,7 +256,7 @@ const rivers = [{
     longitude: -102.3342182,
     uniqueFish: "Centrocercus urophasianus",
     river: "Black Canyon Water Trail",
-    length: 88
+    lengthInKilometers: 88
 }, {
     id: 8,
     price: "$$",
@@ -264,7 +264,7 @@ const rivers = [{
     longitude: 104.2532768,
     uniqueFish: "Sceloporus magister",
     river: "Mulberry River",
-    length: 52
+    lengthInKilometers: 52
 }, {
     id: 9,
     price: "$$$$",
@@ -272,7 +272,7 @@ const rivers = [{
     longitude: 122.3862362,
     uniqueFish: "Numida meleagris",
     river: "Duck River",
-    length: 78
+    lengthInKilometers: 78
 }, {
     id: 10,
     price: "$$$",
@@ -280,7 +280,7 @@ const rivers = [{
     longitude: 21.1886684,
     uniqueFish: "Pteropus rufus",
     river: "Northern Forest Canoe Trail",
-    length: 74
+    lengthInKilometers: 74
 }, {
     id: 11,
     price: "$$$",
@@ -288,7 +288,7 @@ const rivers = [{
     longitude: 114.246016,
     uniqueFish: "Phalaropus lobatus",
     river: "Green River",
-    length: 100
+    lengthInKilometers: 100
 }, {
     id: 12,
     price: "$$$$$",
@@ -296,7 +296,7 @@ const rivers = [{
     longitude: 23.6314746,
     uniqueFish: "Alcelaphus buselaphus cokii",
     river: "Tuolumne River",
-    length: 13
+    lengthInKilometers: 13
 }, {
     id: 13,
     price: "$",
@@ -304,7 +304,7 @@ const rivers = [{
     longitude: 13.8300629,
     uniqueFish: "Catharacta skua",
     river: "Noatak River",
-    length: 61
+    lengthInKilometers: 61
 }, {
     id: 14,
     price: "$",
@@ -312,7 +312,7 @@ const rivers = [{
     longitude: 107.7918964,
     uniqueFish: "Spermophilus parryii",
     river: "Wabakimi Provincial Park",
-    length: 90
+    lengthInKilometers: 90
 }, {
     id: 15,
     price: "$$",
@@ -320,7 +320,7 @@ const rivers = [{
     longitude: 102.591737,
     uniqueFish: "Oryx gazella callotis",
     river: "Nahanni River",
-    length: 55
+    lengthInKilometers: 55
 }, {
     id: 16,
     price: "$$$",
@@ -328,7 +328,7 @@ const rivers = [{
     longitude: 117.323725,
     uniqueFish: "Zenaida asiatica",
     river: "Gauley River",
-    length: 50
+    lengthInKilometers: 50
 }, {
     id: 17,
     price: "$$$",
@@ -336,7 +336,7 @@ const rivers = [{
     longitude: -114.001928,
     uniqueFish: "Coluber constrictor",
     river: "San Juan River",
-    length: 84
+    lengthInKilometers: 84
 }, {
     id: 18,
     price: "$",
@@ -344,7 +344,7 @@ const rivers = [{
     longitude: 45.7420648,
     uniqueFish: "Upupa epops",
     river: "Devils River",
-    length: 70
+    lengthInKilometers: 70
 }, {
     id: 19,
     price: "$",
@@ -352,7 +352,7 @@ const rivers = [{
     longitude: 8.8831506,
     uniqueFish: "Panthera leo",
     river: "Clearwater River Canoe Trail",
-    length: 71
+    lengthInKilometers: 71
 }, {
     id: 20,
     price: "$$",
@@ -360,7 +360,7 @@ const rivers = [{
     longitude: 23.7946578,
     uniqueFish: "Phalacrocorax albiventer",
     river: "Allagash Wilderness Waterway",
-    length: 65
+    lengthInKilometers: 65
 }, {
     id: 21,
     price: "$",
@@ -368,7 +368,7 @@ const rivers = [{
     longitude: 11.3885001,
     uniqueFish: "Phalacrocorax carbo",
     river: "John Day River",
-    length: 46
+    lengthInKilometers: 46
 }, {
     id: 22,
     price: "$$",
@@ -376,7 +376,7 @@ const rivers = [{
     longitude: 34.6661709,
     uniqueFish: "Ictonyx striatus",
     river: "Rio Grande",
-    length: 77
+    lengthInKilometers: 77
 }, {
     id: 23,
     price: "$$$",
@@ -384,7 +384,7 @@ const rivers = [{
     longitude: 23.6556259,
     uniqueFish: "Anhinga rufa",
     river: "Chattooga River",
-    length: 46
+    lengthInKilometers: 46
 }, {
     id: 24,
     price: "$$$$",
@@ -392,7 +392,7 @@ const rivers = [{
     longitude: 44.9159938,
     uniqueFish: "Theropithecus gelada",
     river: "Loxahatchee River",
-    length: 77
+    lengthInKilometers: 77
 }, {
     id: 25,
     price: "$$",
@@ -400,7 +400,7 @@ const rivers = [{
     longitude: 121.682569,
     uniqueFish: "Phoenicopterus ruber",
     river: "Pecatonica River",
-    length: 87
+    lengthInKilometers: 87
 }]
 
 const wildlife = [{
@@ -410,37 +410,37 @@ const wildlife = [{
     longitude: 12.2028691,
     uniqueFish: "Hystrix indica",
     river: "Eleven Point National Scenic River",
-    length: 22
+    lengthInKilometers: 22
 }]
 
 // Get the sum of all trail miles
 const totalTrailMiles = (trails) => {
     let total = 0
     for (const trail of trails) {
-        total = trail.length
+        total += trail.lengthInKilometers
     }
 
-    return total
+    return(Math.round(total))
 }
 
 // Get the shortest of all trails
-const shortyTrail = (trailArray) => {
-    let shortest = 0
-    for (const trail of trailArray) {
-        if(trail.length < shortest) {
-            shortest = trail.length
+const shortestTrail = (trailArray) => {
+    let shortest = 50
+    for (const trail of trailArray)
+        if (trail.lengthInKilometers < shortest) {
+            shortest = trail.lengthInKilometers
         }
-    }
-
+    
     return shortest
 }
 
+
 // Get the longest of all trails
-const longTrail = (allTrails) => {
+const longestTrail = (allTrails) => {
     let longest = 0
     for (const trail of allTrails) {
-        if(trail.length >> longest) {
-            longest = trail.length
+        if (trail.lengthInKilometers > longest) {
+            longest = trail.lengthInKilometers
         }
     }
 
@@ -469,11 +469,11 @@ console.log('***************************************************')
 console.log('*****              T R A I L S                *****')
 console.log('***************************************************')
 const trailTotal = totalTrailMiles(trails)
-console.log(`We service ${trailTotal} miles of wilderness trails across the US`)
+console.log(`We service nearly ${trailTotal} kilometers of wilderness trails across the US`)
 
 const shortTrail = shortestTrail(trails)
 console.log(`The shortest trail is ${shortTrail} kilometers`)
 
-const longest = longTrail(trails)
-console.log(`The longest trail is ${longest} kilometers`)
+const longTrail = longestTrail(trails)
+console.log(`The longest trail is ${longTrail} kilometers`)
 
