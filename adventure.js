@@ -503,6 +503,30 @@ const findPremiumTrails = (trails) => {
     return premiumTrails
 }
 
+// Get least expensive river tourss
+const findBargainRivers = (rivers) => {
+    let bargainRivers = []
+    for (const river of rivers) {
+        if (river.price === "$") {
+            bargainRivers.push(river.river)
+        }        
+    }
+    bargainRivers = bargainRivers.join(`\n\t`)
+    return bargainRivers
+}
+
+// Get most expensive river tourss
+const findPremiumRivers = (rivers) => {
+    let premiumRivers = []
+    for (const river of rivers) {
+        if (river.price >= "$$$$") {
+            premiumRivers.push(river.river)
+        }        
+    }
+    premiumRivers = premiumRivers.join(`\n\t`)
+    return premiumRivers
+}
+
 
 console.log(`
     B J Ö R N ' S   W I L D N E R N E S S   A D V E N T U R E S
@@ -549,4 +573,10 @@ const shortRiver = shortestRiver(rivers)
 console.log(`The shortest river tour is ${shortRiver} kilometers`)
 
 const longRiver = longestRiver(rivers)
-console.log(`The longest river tour is ${longRiver} kilometers`)
+console.log(`The longest river tour is ${longRiver} kilometers \n`)
+
+const cheapRivers = findBargainRivers(rivers)
+console.log(`The least expensive river tours are: \n\t${cheapRivers} \n`)
+
+const expensiveRivers = findPremiumRivers(rivers)
+console.log(`The most expensive river tours are: \n\t${expensiveRivers} \n`)
