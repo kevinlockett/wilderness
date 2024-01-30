@@ -23,10 +23,10 @@ const displayTrailInformation = () => {
     
     console.log(`The most expensive trails are: \n\t${expensiveTrails} \n`)
     
-    console.log(`TRAIL DETAILS:`)
-    console.log(`--------------------------------- \n`)
+//    console.log(`TRAIL DETAILS:`)
+//    console.log(`--------------------------------- \n`)
     
-    console.log(trailDetails)
+//    console.log(trailDetails)
 }
 
 module.exports = { displayTrailInformation }
